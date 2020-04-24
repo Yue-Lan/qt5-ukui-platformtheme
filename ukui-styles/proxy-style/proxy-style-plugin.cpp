@@ -131,10 +131,10 @@ QStyle *ProxyStylePlugin::create(const QString &key)
             }
         }
         qDebug()<<"ukui create proxy style";
-        return new ProxyStyle(nullptr);
+        return new ProxyStyle("ukui-default");
     }
     qDebug()<<"ukui create proxy style: null";
-    return new ProxyStyle(nullptr);
+    return new ProxyStyle("ukui-default");
 }
 
 const QStringList ProxyStylePlugin::blackList()

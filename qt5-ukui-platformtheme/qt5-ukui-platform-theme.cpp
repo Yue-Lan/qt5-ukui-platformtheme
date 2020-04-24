@@ -143,7 +143,7 @@ QVariant Qt5UKUIPlatformTheme::themeHint(ThemeHint hint) const
         if (UKUIStyleSettings::isSchemaInstalled("org.ukui.style")) {
             return UKUIStyleSettings::globalInstance()->get("icon-theme-name");
         }
-        return "hicolor";
+        return "ukui-icon-theme-default";
     }
     case QPlatformTheme::SystemIconFallbackThemeName:
         return "ukui-icon-theme-default";
